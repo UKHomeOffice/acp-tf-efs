@@ -1,7 +1,3 @@
-provider "aws" {
-  region = var.region
-}
-
 resource "aws_efs_file_system" "efs" {
   creation_token                  = var.name
   encrypted                       = var.encrypted
