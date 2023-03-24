@@ -44,7 +44,7 @@ variable "throughput_mode" {
 }
 
 variable "tags" {
-  type        = map
+  type        = map(any)
   default     = {}
   description = "An optional map of tags to associate with the AWS resources to be provisioned."
 }
